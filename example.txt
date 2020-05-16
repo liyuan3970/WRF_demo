@@ -1,0 +1,1245 @@
+
+
+
+以下是WRF输出变量的一个翻译，由于不是所有的变量都接触过，也仅仅是就字面意思翻译，所以有的变量的意义难免是不对的（拿不准的，我会用红色标出），因此请用过其中变量的朋友和我一起来完善它：
+
+float LU_INDEX(Time, south_north, west_east) ;
+LU_INDEX:description = "LAND USE CATEGORY" ;
+LU_INDEX:units = "" ;
+地表类型（如城市、植被、湖泊等）
+
+
+float ZNU(Time, bottom_top) ;
+ZNU:description = "eta values on half (mass) levels" ;
+ZNU:units = "" ;
+eta坐标系的值
+
+
+float ZNW(Time, bottom_top_stag) ;
+ZNW:description = "eta values on full (w) levels" ;
+ZNW:units = "" ;
+eta坐标系的值
+
+
+float ZS(Time, soil_layers_stag) ;
+ZS:description = "DEPTHS OF CENTERS OF SOIL LAYERS" ;
+ZS:units = "m" ;
+土壤层中层的深度
+
+
+float DZS(Time, soil_layers_stag) ;
+DZS:description = "THICKNESSES OF SOIL LAYERS" ;
+DZS:units = "m" ;
+土壤层厚度
+
+
+float U(Time, bottom_top, south_north, west_east_stag) ;
+U:description = "x-wind component" ;
+U:units = "m s-1" ;
+纬向风分量
+
+
+float V(Time, bottom_top, south_north_stag, west_east) ;
+V:description = "y-wind component" ;
+V:units = "m s-1" ;
+经向风分量
+
+
+float W(Time, bottom_top_stag, south_north, west_east) ;
+W:description = "z-wind component" ;
+W:units = "m s-1" ;
+垂直风分量
+
+
+float PH(Time, bottom_top_stag, south_north, west_east) ;
+PH:description = "perturbation geopotential" ;
+PH:units = "m2 s-2" ;
+扰动位势
+
+
+float PHB(Time, bottom_top_stag, south_north, west_east) ;
+PHB:description = "base-state geopotential" ;
+PHB:units = "m2 s-2" ;
+平均重力位势
+
+
+float T(Time, bottom_top, south_north, west_east) ;
+T:description = "perturbation potential temperature (theta-t0)" ;
+T:units = "K" ;
+扰动位温
+
+
+float MU(Time, south_north, west_east) ;
+MU:description = "perturbation dry air mass in column" ;
+MU:units = "Pa" ;
+干空气柱扰动气压
+
+
+float MUB(Time, south_north, west_east) ;
+MUB:description = "base state dry air mass in column" ;
+MUB:units = "Pa" ;
+平均干空气柱气压
+
+
+float NEST_POS(Time, south_north, west_east) ;
+NEST_POS:description = "-" ;
+NEST_POS:units = "-" ;
+…………………
+
+
+float P(Time, bottom_top, south_north, west_east) ;
+P:description = "perturbation pressure" ;
+P:units = "Pa" ;
+扰动气压
+
+
+float PB(Time, bottom_top, south_north, west_east) ;
+PB:description = "BASE STATE PRESSURE" ;
+PB:units = "Pa" ;
+平均气压
+
+
+float SR(Time, south_north, west_east) ;
+SR:description = "fraction of frozen precipitation" ;
+SR:units = "-" ;
+固体降水比例
+
+
+float POTEVP(Time, south_north, west_east) ;
+POTEVP:description = "accumulated potential evaporation" ;
+POTEVP:units = "W m-2" ;
+累积的潜在蒸发能量
+
+
+float SNOPCX(Time, south_north, west_east) ;
+SNOPCX:description = "snow phase change heat flux" ;
+SNOPCX:units = "W m-2" ;
+雪态改变时的热通量
+
+
+float SOILTB(Time, south_north, west_east) ;
+SOILTB:description = "bottom soil temperature" ;
+SOILTB:units = "K" ;
+土壤底部温度
+
+
+float FNM(Time, bottom_top) ;
+FNM:description = "upper weight for vertical stretching" ;
+FNM:units = "" ;
+？
+
+
+float FNP(Time, bottom_top) ;
+FNP:description = "lower weight for vertical stretching" ;
+FNP:units = "" ;
+？
+
+
+float RDNW(Time, bottom_top) ;
+RDNW:description = "inverse d(eta) values between full (w) levels" ;
+RDNW:units = "" ;
+？
+
+
+float RDN(Time, bottom_top) ;
+RDN:description = "inverse d(eta) values between half (mass) levels" ;
+RDN:units = "" ;
+？
+
+
+float DNW(Time, bottom_top) ;
+DNW:description = "d(eta) values between full (w) levels" ;
+DNW:units = "" ;
+？
+
+
+float DN(Time, bottom_top) ;
+DN:description = "d(eta) values between half (mass) levels" ;
+DN:units = "" ;
+？
+
+
+float CFN(Time) ;
+CFN:description = "extrapolation constant" ;
+CFN:units = "" ;
+外推常数
+
+
+float CFN1(Time) ;
+CFN1:description = "extrapolation constant" ;
+CFN1:units = "" ;
+外推常数1
+
+
+float Q2(Time, south_north, west_east) ;
+Q2:description = "QV at 2 M" ;
+Q2:units = "kg kg-1" ;
+地面2m高度的比湿
+
+
+float T2(Time, south_north, west_east) ;
+T2:description = "TEMP at 2 M" ;
+T2:units = "K" ;
+地面2m高度的温度
+
+
+float TH2(Time, south_north, west_east) ;
+TH2:description = "POT TEMP at 2 M" ;
+TH2:units = "K" ;
+地面2m高度的？
+
+
+float PSFC(Time, south_north, west_east) ;
+PSFC:description = "SFC PRESSURE" ;
+PSFC:units = "Pa" ;
+表面气压
+
+
+float U10(Time, south_north, west_east) ;
+U10:description = "U at 10 M" ;
+U10:units = "m s-1" ;
+地面10m风场的纬向分量
+
+
+float V10(Time, south_north, west_east) ;
+V10:description = "V at 10 M" ;
+V10:units = "m s-1" ;
+地面10m风场的经向分量
+
+
+float RDX(Time) ;
+RDX:description = "INVERSE X GRID LENGTH" ;
+RDX:units = "" ;
+？
+
+
+float RDY(Time) ;
+RDY:description = "INVERSE Y GRID LENGTH" ;
+RDY:units = "" ;
+？
+
+
+float RESM(Time) ;
+RESM:description = "TIME WEIGHT CONSTANT FOR SMALL STEPS" ;
+RESM:units = "" ;
+？
+
+
+float ZETATOP(Time) ;
+ZETATOP:description = "ZETA AT MODEL TOP" ;
+ZETATOP:units = "" ;
+模式大气层顶的eta值
+
+
+float CF1(Time) ;
+CF1:description = "2nd order extrapolation constant" ;
+CF1:units = "" ;
+2级外推常数1
+
+
+float CF2(Time) ;
+CF2:description = "2nd order extrapolation constant" ;
+CF2:units = "" ;
+2级外推常数2
+
+
+float CF3(Time) ;
+CF3:description = "2nd order extrapolation constant" ;
+CF3:units = "" ;
+2级外推常数3
+
+
+int ITIMESTEP(Time) ;
+ITIMESTEP:description = "" ;
+ITIMESTEP:units = "" ;
+时间步长
+
+
+float XTIME(Time) ;
+XTIME:description = "minutes since simulation start" ;
+XTIME:units = "" ;
+已经模拟时间的长度
+
+
+float QVAPOR(Time, bottom_top, south_north, west_east) ;
+QVAPOR:description = "Water vapor mixing ratio" ;
+QVAPOR:units = "kg kg-1" ;
+水汽（模式模拟的湿空气中的）的混合比
+
+
+float QCLOUD(Time, bottom_top, south_north, west_east) ;
+QCLOUD:description = "Cloud water mixing ratio" ;
+QCLOUD:units = "kg kg-1" ;
+云水（模式模拟的实际空气中的）的混合比
+
+
+float QRAIN(Time, bottom_top, south_north, west_east) ;
+QRAIN:description = "Rain water mixing ratio" ;
+QRAIN:units = "kg kg-1" ;
+雨水（模式模拟的实际空气中的）的混合比
+
+
+float LANDMASK(Time, south_north, west_east) ;
+LANDMASK:description = "LAND MASK (1 FOR LAND, 0 FOR WATER)" ;
+LANDMASK:units = "" ;
+land mask（1是陆地，0是水体）
+
+
+float TSLB(Time, soil_layers_stag, south_north, west_east) ;
+TSLB:description = "SOIL TEMPERATURE" ;
+TSLB:units = "K" ;
+各层土壤温度
+
+
+float SMOIS(Time, soil_layers_stag, south_north, west_east) ;
+SMOIS:description = "SOIL MOISTURE" ;
+SMOIS:units = "m3 m-3" ;
+各层土壤湿度
+
+
+float SH2O(Time, soil_layers_stag, south_north, west_east) ;
+SH2O:description = "SOIL LIQUID WATER" ;
+SH2O:units = "m3 m-3" ;
+各层土壤液态水含量？
+
+
+float SEAICE(Time, south_north, west_east) ;
+SEAICE:description = "SEA ICE FLAG" ;
+SEAICE:units = "" ;
+海冰标志
+
+
+float XICEM(Time, south_north, west_east) ;
+XICEM:description = "SEA ICE FLAG (PREVIOUS STEP)" ;
+XICEM:units = "" ;
+上一时间步长的海冰标志
+
+
+float SFROFF(Time, south_north, west_east) ;
+SFROFF:description = "SURFACE RUNOFF" ;
+SFROFF:units = "mm" ;
+地表径流
+
+
+float UDROFF(Time, south_north, west_east) ;
+UDROFF:description = "UNDERGROUND RUNOFF" ;
+UDROFF:units = "mm" ;
+地下径流
+
+
+int IVGTYP(Time, south_north, west_east) ;
+IVGTYP:description = "DOMINANT VEGETATION CATEGORY" ;
+IVGTYP:units = "" ;
+主要的植被种类
+
+
+int ISLTYP(Time, south_north, west_east) ;
+ISLTYP:description = "DOMINANT SOIL CATEGORY" ;
+ISLTYP:units = "" ;
+主要的土壤种类
+
+
+float VEGFRA(Time, south_north, west_east) ;
+VEGFRA:description = "VEGETATION FRACTION" ;
+VEGFRA:units = "" ;
+植被比例
+
+
+float GRDFLX(Time, south_north, west_east) ;
+GRDFLX:description = "GROUND HEAT FLUX" ;
+GRDFLX:units = "W m-2" ;
+地面热通量
+
+
+float SNOW(Time, south_north, west_east) ;
+SNOW:description = "SNOW WATER EQUIVALENT" ;
+SNOW:units = "kg m-2" ;
+雪水等价物
+
+
+float SNOWH(Time, south_north, west_east) ;
+SNOWH:description = "PHYSICAL SNOW DEPTH" ;
+SNOWH:units = "m" ;
+实质的雪厚
+
+
+float RHOSN(Time, south_north, west_east) ;
+RHOSN:description = " SNOW DENSITY" ;
+RHOSN:units = "kg m-3" ;
+雪的密度
+
+
+float CANWAT(Time, south_north, west_east) ;
+CANWAT:description = "CANOPY WATER" ;
+CANWAT:units = "kg m-2" ;
+？
+
+
+float SST(Time, south_north, west_east) ;
+SST:description = "SEA SURFACE TEMPERATURE" ;
+SST:units = "K" ;
+海表温度
+
+
+float QNDROPSOURCE(Time, bottom_top, south_north, west_east) ;
+QNDROPSOURCE:description = "Droplet number source" ;
+QNDROPSOURCE:units = " /kg/s" ;
+？
+
+
+float MAPFAC_M(Time, south_north, west_east) ;
+MAPFAC_M:description = "Map scale factor on mass grid" ;
+MAPFAC_M:units = "" ;
+mass grid的地图比例系数
+
+
+float MAPFAC_U(Time, south_north, west_east_stag) ;
+MAPFAC_U:description = "Map scale factor on u-grid" ;
+MAPFAC_U:units = "" ;
+U-grid的地图比例系数
+
+
+float MAPFAC_V(Time, south_north_stag, west_east) ;
+MAPFAC_V:description = "Map scale factor on v-grid" ;
+MAPFAC_V:units = "" ;
+V-grid的地图比例系数
+
+
+float MAPFAC_MX(Time, south_north, west_east) ;
+MAPFAC_MX:description = "Map scale factor on mass grid, x direction" ;
+MAPFAC_MX:units = "" ;
+mass grid的地图在纬向的比例系数
+
+
+float MAPFAC_MY(Time, south_north, west_east) ;
+MAPFAC_MY:description = "Map scale factor on mass grid, y direction" ;
+MAPFAC_MY:units = "" ;
+mass grid的地图在经向的比例系数
+
+
+float MAPFAC_UX(Time, south_north, west_east_stag) ;
+MAPFAC_UX:description = "Map scale factor on u-grid, x direction" ;
+MAPFAC_UX:units = "" ;
+U-grid的地图在纬向的比例系数
+
+
+float MAPFAC_UY(Time, south_north, west_east_stag) ;
+MAPFAC_UY:description = "Map scale factor on u-grid, y direction" ;
+MAPFAC_UY:units = "" ;
+U-grid的地图在经向的比例系数
+
+
+float MAPFAC_VX(Time, south_north_stag, west_east) ;
+MAPFAC_VX:description = "Map scale factor on v-grid, x direction" ;
+MAPFAC_VX:units = "" ;
+V-grid的地图在纬向的比例系数
+
+
+float MF_VX_INV(Time, south_north_stag, west_east) ;
+MF_VX_INV:description = "Inverse map scale factor on v-grid, x direction"
+MF_VX_INV:units = "" ;
+？
+
+
+float MAPFAC_VY(Time, south_north_stag, west_east) ;
+MAPFAC_VY:description = "Map scale factor on v-grid, y direction" ;
+MAPFAC_VY:units = "" ;
+V-grid的地图在经向的比例系数
+
+
+float F(Time, south_north, west_east) ;
+F:description = "Coriolis sine latitude term" ;
+F:units = "s-1" ;
+科氏力中sin(Ω)的部分，Ω为纬度
+
+
+float E(Time, south_north, west_east) ;
+E:description = "Coriolis cosine latitude term" ;
+E:units = "s-1" ;
+科氏力中cos(Ω)的部分，Ω为纬度
+
+
+float SINALPHA(Time, south_north, west_east) ;
+SINALPHA:description = "Local sine of map rotation" ;
+SINALPHA:units = "" ;
+？
+
+
+float COSALPHA(Time, south_north, west_east) ;
+COSALPHA:description = "Local cosine of map rotation" ;
+COSALPHA:units = "" ;
+？
+
+
+float HGT(Time, south_north, west_east) ;
+HGT:description = "Terrain Height" ;
+HGT:units = "m" ;
+地形高度
+
+
+float HGT_SHAD(Time, south_north, west_east) ;
+HGT_SHAD:description = "Height of orographic shadow" ;
+HGT_SHAD:units = "m" ;
+山岳背光坡的高度
+
+
+float TSK(Time, south_north, west_east) ;
+TSK:description = "SURFACE SKIN TEMPERATURE" ;
+TSK:units = "K" ;
+地表温度
+
+
+float P_TOP(Time) ;
+P_TOP:description = "PRESSURE TOP OF THE MODEL" ;
+P_TOP:units = "Pa" ;
+模式顶的气压
+
+
+float MAX_MSTFX(Time) ;
+MAX_MSTFX:description = "Max map factor in domain" ;
+MAX_MSTFX:units = "" ;
+区域内最大地图比例系数
+
+
+float RAINC(Time, south_north, west_east) ;
+RAINC:description = "ACCUMULATED TOTAL CUMULUS PRECIPITATION" ;
+RAINC:units = "mm" ;
+总的积云对流降水累积
+
+
+float RAINNC(Time, south_north, west_east) ;
+RAINNC:description = "ACCUMULATED TOTAL GRID SCALE PRECIPITATION" ;
+RAINNC:units = "mm" ;
+总的格点降水累积
+
+
+float PRATEC(Time, south_north, west_east) ;
+PRATEC:description = "PRECIP RATE FROM CUMULUS SCHEME" ;
+PRATEC:units = "mm s-1" ;
+对流参数化降水比例
+
+
+float RAINCV(Time, south_north, west_east) ;
+RAINCV:description = "TIME-STEP CUMULUS PRECIPITATION" ;
+RAINCV:units = "mm" ;
+对流降水的时间步长
+
+
+float SNOWNC(Time, south_north, west_east) ;
+SNOWNC:description = "ACCUMULATED TOTAL GRID SCALE SNOW AND ICE" ;
+SNOWNC:units = "mm" ;
+总的格点雪、冰累积
+
+
+float GRAUPELNC(Time, south_north, west_east) ;
+GRAUPELNC:description = "ACCUMULATED TOTAL GRID SCALE GRAUPEL" ;
+GRAUPELNC:units = "mm" ;
+总的格点雪丸累积
+
+
+float EDT_OUT(Time, south_north, west_east) ;
+EDT_OUT:description = "EDT FROM GD SCHEME" ;
+EDT_OUT:units = "" ;
+？
+
+
+float SWDOWN(Time, south_north, west_east) ;
+SWDOWN:description = "DOWNWARD SHORT WAVE FLUX AT GROUND SURFACE" ;
+SWDOWN:units = "W m-2" ;
+地表高度的向下的短波辐射通量
+
+
+float GLW(Time, south_north, west_east) ;
+GLW:description = "DOWNWARD LONG WAVE FLUX AT GROUND SURFACE" ;
+GLW:units = "W m-2" ;
+地表高度的向下的长波辐射通量
+
+
+float OLR(Time, south_north, west_east) ;
+OLR:description = "TOA OUTGOING LONG WAVE" ;
+OLR:units = "W m-2" ;
+向上的长波辐射
+
+
+float XLAT(Time, south_north, west_east) ;
+XLAT:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT:units = "degree_north" ;
+纬度，南半球为负值
+
+
+float XLONG(Time, south_north, west_east) ;
+XLONG:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG:units = "degree_east" ;
+经度，西半球为负值
+
+
+float XLAT_U(Time, south_north, west_east_stag) ;
+XLAT_U:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT_U:units = "degree_north" ;
+U-grid：纬度，南半球为负值
+
+
+float XLONG_U(Time, south_north, west_east_stag) ;
+XLONG_U:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG_U:units = "degree_east" ;
+U-grid：经度，西半球为负值
+
+
+float XLAT_V(Time, south_north_stag, west_east) ;
+XLAT_V:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT_V:units = "degree_north" ;
+V-grid：纬度，南半球为负值
+
+
+float XLONG_V(Time, south_north_stag, west_east) ;
+XLONG_V:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG_V:units = "degree_east" ;
+V-grid：经度，西半球为负值
+
+
+float ALBEDO(Time, south_north, west_east) ;
+ALBEDO:description = "ALBEDO" ;
+ALBEDO:units = "-" ;
+反照率
+
+
+float ALBBCK(Time, south_north, west_east) ;
+ALBBCK:description = "BACKGROUND ALBEDO" ;
+ALBBCK:units = "" ;
+背景反照率
+
+
+float EMISS(Time, south_north, west_east) ;
+EMISS:description = "SURFACE EMISSIVITY" ;
+EMISS:units = "" ;
+地面辐射系数
+
+
+float TMN(Time, south_north, west_east) ;
+TMN:description = "SOIL TEMPERATURE AT LOWER BOUNDARY" ;
+TMN:units = "K" ;
+在更低的边界的土壤温度
+
+
+float XLAND(Time, south_north, west_east) ;
+XLAND:description = "LAND MASK (1 FOR LAND, 2 FOR WATER)" ;
+XLAND:units = "" ;
+land mask（1是陆地，2是水体），不知与上面的LANDMASK有啥差别
+
+
+float UST(Time, south_north, west_east) ;
+UST:description = "U* IN SIMILARITY THEORY" ;
+UST:units = "m s-1" ;
+？
+
+
+float PBLH(Time, south_north, west_east) ;
+PBLH:description = "PBL HEIGHT" ;
+PBLH:units = "m" ;
+边界层高度
+
+
+float HFX(Time, south_north, west_east) ;
+HFX:description = "UPWARD HEAT FLUX AT THE SURFACE" ;
+HFX:units = "W m-2" ;
+地表向上的热量通量
+
+
+float QFX(Time, south_north, west_east) ;
+QFX:description = "UPWARD MOISTURE FLUX AT THE SURFACE" ;
+QFX:units = "kg m-2 s-1" ;
+地表向上的水汽通量
+
+
+float LH(Time, south_north, west_east) ;
+LH:description = "LATENT HEAT FLUX AT THE SURFACE" ;
+LH:units = "W m-2" ;
+地表的潜热通量
+float SNOWC(Time, south_north, west_east) ;
+SNOWC:description = "FLAG INDICATING SNOW COVERAGE (1 FOR SNOW COVER)" ;
+SNOWC:units = "" ;
+雪盖标志（1是雪盖）
+
+ 
+
+
+补充些常用的变量名（以下变量都可以ARWpost生成，注意大小写）：
+geopt 18 0 Geopotential (m2/s2)
+height 18 0 Model height (km)
+tk 18 0 Temperature (K)
+tc 18 0 Temperature (C)
+theta 18 0 Potential Temperature (K)
+td 18 0 Dewpoint Temperature (C)
+td2 1 0 Dewpoint Temperature at 2m (C)
+rh 18 0 Relative Humidity (%)
+rh2 1 0 Relative Humidity at 2m (%)
+wspd 18 0 Wind Speed (m s-1)
+wdir 18 0 Wind Direction (Degrees)
+ws10 1 0 Wind Speed at 10 M (m s-1)
+wd10 1 0 Wind Direction at 10 M (Degrees)
+u10m 1 0 Rotated wind component (m s-1)
+v10m 1 0 Rotated wind component (m s-1)
+slp 1 0 Sea Levelp Pressure (hPa)
+cape 18 0 CAPE (J/kg)
+
+ 
+
+ 
+
+转：http://www.mnmuc.org/space/?action-viewthread-tid-577
+
+ 
+
+ 
+
+ 
+
+ 
+
+float LU_INDEX(Time, south_north, west_east) ;
+LU_INDEX:description = "LAND USE CATEGORY" ;
+LU_INDEX:units = "" ;
+土地利用类型（如城市、植被、湖泊等）
+
+float ZNU(Time, bottom_top) ;
+ZNU:description = "eta values on half (mass) levels" ;
+ZNU:units = "" ;
+eta半层（质量点）坐标值
+
+float ZNW(Time, bottom_top_stag) ;
+ZNW:description = "eta values on full (w) levels" ;
+ZNW:units = "" ;
+eta整层（w点）坐标值
+
+float ZS(Time, soil_layers_stag) ;
+ZS:description = "DEPTHS OF CENTERS OF SOIL LAYERS" ;
+ZS:units = "m" ;
+土壤层各层中间的深度
+
+float DZS(Time, soil_layers_stag) ;
+DZS:description = "THICKNESSES OF SOIL LAYERS" ;
+DZS:units = "m" ;
+土壤层厚度
+
+float U(Time, bottom_top, south_north, west_east_stag) ;
+U:description = "x-wind component" ;
+U:units = "m s-1" ;
+x方向风分量
+
+float V(Time, bottom_top, south_north_stag, west_east) ;
+V:description = "y-wind component" ;
+V:units = "m s-1" ;
+y方向风分量
+
+float W(Time, bottom_top_stag, south_north, west_east) ;
+W:description = "z-wind component" ;
+W:units = "m s-1" ;
+垂直风分量
+
+float PH(Time, bottom_top_stag, south_north, west_east) ;
+PH:description = "perturbation geopotential" ;
+PH:units = "m2 s-2" ;
+扰动位势高度
+
+float PHB(Time, bottom_top_stag, south_north, west_east) ;
+PHB:description = "base-state geopotential" ;
+PHB:units = "m2 s-2" ;
+基准态位势高度
+
+float T(Time, bottom_top, south_north, west_east) ;
+T:description = "perturbation potential temperature (theta-t0)" ;
+T:units = "K" ;
+扰动位温（theta-t0）
+
+float MU(Time, south_north, west_east) ;
+MU:description = "perturbation dry air mass in column" ;
+MU:units = "Pa" ;
+柱内扰动干空气质量
+
+float MUB(Time, south_north, west_east) ;
+MUB:description = "base state dry air mass in column" ;
+MUB:units = "Pa" ;
+柱内基准态干空气质量
+
+float NEST_POS(Time, south_north, west_east) ;
+NEST_POS:description = "-" ;
+NEST_POS:units = "-" ;
+作多层嵌套时粗（母）网格位置
+
+float P(Time, bottom_top, south_north, west_east) ;
+P:description = "perturbation pressure" ;
+P:units = "Pa" ;
+扰动气压
+
+float PB(Time, bottom_top, south_north, west_east) ;
+PB:description = "BASE STATE PRESSURE" ;
+PB:units = "Pa" ;
+基准态气压
+
+float SR(Time, south_north, west_east) ;
+SR:description = "fraction of frozen precipitation" ;
+SR:units = "-" ;
+固体降水比例
+
+float POTEVP(Time, south_north, west_east) ;
+POTEVP:description = "accumulated potential evaporation" ;
+POTEVP:units = "W m-2" ;
+累计的潜在蒸发
+
+float SNOPCX(Time, south_north, west_east) ;
+SNOPCX:description = "snow phase change heat flux" ;
+SNOPCX:units = "W m-2" ;
+雪相态改变的热通量
+
+float SOILTB(Time, south_north, west_east) ;
+SOILTB:description = "bottom soil temperature" ;
+SOILTB:units = "K" ;
+土壤底部温度
+
+float FNM(Time, bottom_top) ;
+FNM:description = "upper weight for vertical stretching" ;
+FNM:units = "" ;
+作垂直方向展开时上层权重
+
+float FNP(Time, bottom_top) ;
+FNP:description = "lower weight for vertical stretching" ;
+FNP:units = "" ; 作垂直方向展开时下层权重
+
+float RDNW(Time, bottom_top) ;
+RDNW:description = "inverse d(eta) values between full (w) levels" ;
+RDNW:units = "" ;
+1除以整层（w层）间eta值之差
+
+float RDN(Time, bottom_top) ;
+RDN:description = "inverse d(eta) values between half (mass) levels" ;
+RDN:units = "" ;
+1除以半层（质量层）间eta值之差
+
+float DNW(Time, bottom_top) ;
+DNW:description = "d(eta) values between full (w) levels" ;
+DNW:units = "" ;
+整层（w层）间eta值之差
+
+float DN(Time, bottom_top) ;
+DN:description = "d(eta) values between half (mass) levels" ;
+DN:units = "" ;
+半层（质量层）间eta值之差
+
+float CFN(Time) ;
+CFN:description = "extrapolation constant" ;
+CFN:units = "" ;
+外推常数
+
+float CFN1(Time) ;
+CFN1:description = "extrapolation constant" ;
+CFN1:units = "" ;
+外推常数1
+
+float Q2(Time, south_north, west_east) ;
+Q2:description = "QV at 2 M" ;
+Q2:units = "kg kg-1" ;
+地面上2m高度的比湿
+
+float T2(Time, south_north, west_east) ;
+T2:description = "TEMP at 2 M" ;
+T2:units = "K" ;
+地面上2m高度的温度
+
+float TH2(Time, south_north, west_east) ;
+TH2:description = "POT TEMP at 2 M" ;
+TH2:units = "K" ;
+地面上2m高度的位温
+
+float PSFC(Time, south_north, west_east) ;
+PSFC:description = "SFC PRESSURE" ;
+PSFC:units = "Pa" ; 地面气压
+
+float U10(Time, south_north, west_east) ;
+U10:description = "U at 10 M" ;
+U10:units = "m s-1" ;
+地面上10m风场的纬向分量
+
+float V10(Time, south_north, west_east) ;
+V10:description = "V at 10 M" ;
+V10:units = "m s-1" ;
+地面上10m风场的经向分量
+
+float RDX(Time) ;
+RDX:description = "INVERSE X GRID LENGTH" ;
+RDX:units = "" ;
+1除以x方向网格距
+
+float RDY(Time) ;
+RDY:description = "INVERSE Y GRID LENGTH" ;
+RDY:units = "" ;
+1除以y方向网格距
+
+float RESM(Time) ;
+RESM:description = "TIME WEIGHT CONSTANT FOR SMALL STEPS" ;
+RESM:units = "" ;
+对小时间步长时的时间权重常数
+
+float ZETATOP(Time) ;
+ZETATOP:description = "ZETA AT MODEL TOP" ;
+ZETATOP:units = "" ;
+模式大气层顶的eta值
+
+float CF1(Time) ;
+CF1:description = "2nd order extrapolation constant" ;
+CF1:units = "" ;
+2阶外推常数1
+
+float CF2(Time) ;
+CF2:description = "2nd order extrapolation constant" ;
+CF2:units = "" ;
+2阶外推常数2
+
+float CF3(Time) ;
+CF3:description = "2nd order extrapolation constant" ;
+CF3:units = "" ;
+2阶外推常数3
+
+int ITIMESTEP(Time) ;
+ITIMESTEP:description = "" ;
+ITIMESTEP:units = "" ;
+时间步长计数
+
+float XTIME(Time) ;
+XTIME:description = "minutes since simulation start" ;
+XTIME:units = "" ;
+已经模拟时间的长度
+
+float QVAPOR(Time, bottom_top, south_north, west_east) ;
+QVAPOR:description = "Water vapor mixing ratio" ;
+QVAPOR:units = "kg kg-1" ;
+水汽混合比
+
+float QCLOUD(Time, bottom_top, south_north, west_east) ;
+QCLOUD:description = "Cloud water mixing ratio" ;
+QCLOUD:units = "kg kg-1" ;
+云水混合比
+
+float QRAIN(Time, bottom_top, south_north, west_east) ;
+QRAIN:description = "Rain water mixing ratio" ;
+QRAIN:units = "kg kg-1" ;
+雨水混合比
+
+float LANDMASK(Time, south_north, west_east) ;
+LANDMASK:description = "LAND MASK (1 FOR LAND, 0 FOR WATER)" ;
+LANDMASK:units = "" ;
+陆面指标（1是陆地，0是水体）
+
+float TSLB(Time, soil_layers_stag, south_north, west_east) ;
+TSLB:description = "SOIL TEMPERATURE" ;
+TSLB:units = "K" ;
+各层土壤温度
+
+float SMOIS(Time, soil_layers_stag, south_north, west_east) ;
+SMOIS:description = "SOIL MOISTURE" ;
+SMOIS:units = "m3 m-3" ;
+各层土壤湿度
+
+float SH2O(Time, soil_layers_stag, south_north, west_east) ;
+SH2O:description = "SOIL LIQUID WATER" ;
+SH2O:units = "m3 m-3" ;
+各层土壤液态水含量？
+
+float SEAICE(Time, south_north, west_east) ;
+SEAICE:description = "SEA ICE FLAG" ;
+SEAICE:units = "" ;
+海冰标志
+
+float XICEM(Time, south_north, west_east) ;
+XICEM:description = "SEA ICE FLAG (PREVIOUS STEP)" ;
+XICEM:units = "" ;
+上一步时的海冰标志
+
+float SFROFF(Time, south_north, west_east) ;
+SFROFF:description = "SURFACE RUNOFF" ;
+SFROFF:units = "mm" ;
+地表径流
+
+float UDROFF(Time, south_north, west_east) ;
+UDROFF:description = "UNDERGROUND RUNOFF" ;
+UDROFF:units = "mm" ;
+地下径流
+
+int IVGTYP(Time, south_north, west_east) ;
+IVGTYP:description = "DOMINANT VEGETATION CATEGORY" ;
+IVGTYP:units = "" ;
+占主导的植被种类
+
+int ISLTYP(Time, south_north, west_east) ;
+ISLTYP:description = "DOMINANT SOIL CATEGORY" ;
+ISLTYP:units = "" ;
+占主导的土壤种类
+
+float VEGFRA(Time, south_north, west_east) ;
+VEGFRA:description = "VEGETATION FRACTION" ;
+VEGFRA:units = "" ;
+植被比例
+
+float GRDFLX(Time, south_north, west_east) ;
+GRDFLX:description = "GROUND HEAT FLUX" ;
+GRDFLX:units = "W m-2" ;
+地面热通量
+
+float SNOW(Time, south_north, west_east) ;
+SNOW:description = "SNOW WATER EQUIVALENT" ;
+SNOW:units = "kg m-2" ;
+雪水当量
+
+float SNOWH(Time, south_north, west_east) ;
+SNOWH:description = "PHYSICAL SNOW DEPTH" ;
+SNOWH:units = "m" ;
+实际雪厚
+
+float RHOSN(Time, south_north, west_east) ;
+RHOSN:description = " SNOW DENSITY" ;
+RHOSN:units = "kg m-3" ;
+雪密度
+
+float CANWAT(Time, south_north, west_east) ;
+CANWAT:description = "CANOPY WATER" ;
+CANWAT:units = "kg m-2" ;
+冠层中的水
+
+float SST(Time, south_north, west_east) ;
+SST:description = "SEA SURFACE TEMPERATURE" ;
+SST:units = "K" ;
+海表面温度
+
+float QNDROPSOURCE(Time, bottom_top, south_north, west_east) ;
+QNDROPSOURCE:description = "Droplet number source" ;
+QNDROPSOURCE:units = " /kg/s" ;
+水滴数源
+
+float MAPFAC_M(Time, south_north, west_east) ;
+MAPFAC_M:description = "Map scale factor on mass grid" ;
+MAPFAC_M:units = "" ;
+质量格点处的地图比例系数
+
+float MAPFAC_U(Time, south_north, west_east_stag) ;
+MAPFAC_U:description = "Map scale factor on u-grid" ;
+MAPFAC_U:units = "" ;
+u-格点处的地图比例系数
+
+float MAPFAC_V(Time, south_north_stag, west_east) ;
+MAPFAC_V:description = "Map scale factor on v-grid" ;
+MAPFAC_V:units = "" ;
+v-格点处的地图比例系数
+
+float MAPFAC_MX(Time, south_north, west_east) ;
+MAPFAC_MX:description = "Map scale factor on mass grid, x direction" ;
+MAPFAC_MX:units = "" ;
+x方向上质量格点处的地图比例系数
+
+float MAPFAC_MY(Time, south_north, west_east) ;
+MAPFAC_MY:description = "Map scale factor on mass grid, y direction" ;
+MAPFAC_MY:units = "" ;
+y方向上质量格点处的地图比例系数
+
+float MAPFAC_UX(Time, south_north, west_east_stag) ;
+MAPFAC_UX:description = "Map scale factor on u-grid, x direction" ;
+MAPFAC_UX:units = "" ;
+x方向上u-格点处的地图比例系数
+
+float MAPFAC_UY(Time, south_north, west_east_stag) ;
+MAPFAC_UY:description = "Map scale factor on u-grid, y direction" ;
+MAPFAC_UY:units = "" ;
+y方向上u-格点处的地图比例系数
+
+float MAPFAC_VX(Time, south_north_stag, west_east) ;
+MAPFAC_VX:description = "Map scale factor on v-grid, x direction" ;
+MAPFAC_VX:units = "" ;
+x方向上v-格点处的地图比例系数
+
+float MF_VX_INV(Time, south_north_stag, west_east) ;
+MF_VX_INV:description = "Inverse map scale factor on v-grid, x direction"
+MF_VX_INV:units = "" ;
+1除以x方向上v-格点处的地图比例系数
+
+float MAPFAC_VY(Time, south_north_stag, west_east) ;
+MAPFAC_VY:description = "Map scale factor on v-grid, y direction" ;
+MAPFAC_VY:units = "" ;
+y方向上v-格点处的地图比例系数
+
+float F(Time, south_north, west_east) ;
+F:description = "Coriolis sine latitude term" ;
+F:units = "s-1" ;
+科氏力中sin(Ω)的部分，Ω为纬度
+
+float E(Time, south_north, west_east) ;
+E:description = "Coriolis cosine latitude term" ;
+E:units = "s-1" ;
+科氏力中cos(Ω)的部分，Ω为纬度
+
+float SINALPHA(Time, south_north, west_east) ;
+SINALPHA:description = "Local sine of map rotation" ;
+SINALPHA:units = "" ;
+局地sin（地图旋转角）
+
+float COSALPHA(Time, south_north, west_east) ;
+COSALPHA:description = "Local cosine of map rotation" ;
+COSALPHA:units = "" ;
+局地cos（地图旋转角）
+
+float HGT(Time, south_north, west_east) ;
+HGT:description = "Terrain Height" ;
+HGT:units = "m" ;
+地形高度
+
+float HGT_SHAD(Time, south_north, west_east) ;
+HGT_SHAD:description = "Height of orographic shadow" ;
+HGT_SHAD:units = "m" ;
+山岳背光坡的高度
+
+float TSK(Time, south_north, west_east) ;
+TSK:description = "SURFACE SKIN TEMPERATURE" ;
+TSK:units = "K" ;
+地表温度
+
+float P_TOP(Time) ;
+P_TOP:description = "PRESSURE TOP OF THE MODEL" ;
+P_TOP:units = "Pa" ;
+模式顶的气压
+
+float MAX_MSTFX(Time) ;
+MAX_MSTFX:description = "Max map factor in domain" ;
+MAX_MSTFX:units = "" ;
+区域内的最大地图比例系数
+
+float RAINC(Time, south_north, west_east) ;
+RAINC:description = "ACCUMULATED TOTAL CUMULUS PRECIPITATION" ;
+RAINC:units = "mm" ;
+累积的积云对流降水
+
+float RAINNC(Time, south_north, west_east) ;
+RAINNC:description = "ACCUMULATED TOTAL GRID SCALE PRECIPITATION" ;
+RAINNC:units = "mm" ;
+累积的格点降水
+
+float PRATEC(Time, south_north, west_east) ;
+PRATEC:description = "PRECIP RATE FROM CUMULUS SCHEME" ;
+PRATEC:units = "mm s-1" ;
+由积云方案算的对流降水率
+
+float RAINCV(Time, south_north, west_east) ;
+RAINCV:description = "TIME-STEP CUMULUS PRECIPITATION" ;
+RAINCV:units = "mm" ;
+计算对流降水的时间步长
+
+float SNOWNC(Time, south_north, west_east) ;
+SNOWNC:description = "ACCUMULATED TOTAL GRID SCALE SNOW AND ICE" ;
+SNOWNC:units = "mm" ;
+累积的格点降雪和冰量
+
+float GRAUPELNC(Time, south_north, west_east) ;
+GRAUPELNC:description = "ACCUMULATED TOTAL GRID SCALE GRAUPEL" ;
+GRAUPELNC:units = "mm" ;
+累积的格点降雪丸量
+
+float EDT_OUT(Time, south_north, west_east) ;
+EDT_OUT:description = "EDT FROM GD SCHEME" ;
+EDT_OUT:units = "" ;
+Grell-Devenyi方案计算的edt场
+
+float SWDOWN(Time, south_north, west_east) ;
+SWDOWN:description = "DOWNWARD SHORT WAVE FLUX AT GROUND SURFACE" ;
+SWDOWN:units = "W m-2" ;
+地表处的向下短波辐射通量
+
+float GLW(Time, south_north, west_east) ;
+GLW:description = "DOWNWARD LONG WAVE FLUX AT GROUND SURFACE" ;
+GLW:units = "W m-2" ;
+地表处的向下长波辐射通量
+
+float OLR(Time, south_north, west_east) ;
+OLR:description = "TOA OUTGOING LONG WAVE" ;
+OLR:units = "W m-2" ;
+TOA处的向上长波辐射通量
+
+float XLAT(Time, south_north, west_east) ;
+XLAT:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT:units = "degree_north" ;
+质量点的纬度（南半球为负值）
+
+float XLONG(Time, south_north, west_east) ;
+XLONG:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG:units = "degree_east" ;
+质量点的经度（西半球为负值）
+
+float XLAT_U(Time, south_north, west_east_stag) ;
+XLAT_U:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT_U:units = "degree_north" ;
+U-格点的纬度（南半球为负值）
+
+float XLONG_U(Time, south_north, west_east_stag) ;
+XLONG_U:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG_U:units = "degree_east" ;
+U-格点的经度（西半球为负值）
+
+float XLAT_V(Time, south_north_stag, west_east) ;
+XLAT_V:description = "LATITUDE, SOUTH IS NEGATIVE" ;
+XLAT_V:units = "degree_north" ;
+V-格点的纬度（南半球为负值）
+
+float XLONG_V(Time, south_north_stag, west_east) ;
+XLONG_V:description = "LONGITUDE, WEST IS NEGATIVE" ;
+XLONG_V:units = "degree_east" ;
+V-格点的经度（西半球为负值）
+
+float ALBEDO(Time, south_north, west_east) ;
+ALBEDO:description = "ALBEDO" ;
+ALBEDO:units = "-" ;
+反照率
+
+float ALBBCK(Time, south_north, west_east) ;
+ALBBCK:description = "BACKGROUND ALBEDO" ;
+ALBBCK:units = "" ;
+背景反照率
+
+float EMISS(Time, south_north, west_east) ;
+EMISS:description = "SURFACE EMISSIVITY" ;
+EMISS:units = "" ;
+地面发射率
+
+float TMN(Time, south_north, west_east) ;
+TMN:description = "SOIL TEMPERATURE AT LOWER BOUNDARY" ;
+TMN:units = "K" ;
+更低边界处的土壤温度
+
+float XLAND(Time, south_north, west_east) ;
+XLAND:description = "LAND MASK (1 FOR LAND, 2 FOR WATER)" ;
+XLAND:units = "" ;
+陆面指标（1是陆地，2是水体）
+
+float UST(Time, south_north, west_east) ;
+UST:description = "U* IN SIMILARITY THEORY" ;
+UST:units = "m s-1" ;
+相似性理论中的摩擦速度
+
+float PBLH(Time, south_north, west_east) ;
+PBLH:description = "PBL HEIGHT" ;
+PBLH:units = "m" ;
+行星边界层高度
+
+float HFX(Time, south_north, west_east) ;
+HFX:description = "UPWARD HEAT FLUX AT THE SURFACE" ;
+HFX:units = "W m-2" ;
+地表面处向上的热量通量
+
+float QFX(Time, south_north, west_east) ;
+QFX:description = "UPWARD MOISTURE FLUX AT THE SURFACE" ;
+QFX:units = "kg m-2 s-1" ;
+地表面处向上的水汽通量
+
+float LH(Time, south_north, west_east) ;
+LH:description = "LATENT HEAT FLUX AT THE SURFACE" ;
+LH:units = "W m-2" ;
+地表面处的潜热通量
+
+float SNOWC(Time, south_north, west_east) ;
+SNOWC:description = "FLAG INDICATING SNOW COVERAGE (1 FOR SNOW COVER)" ;
+SNOWC:units = "" ;
+雪盖标志（1是有雪）
